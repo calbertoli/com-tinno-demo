@@ -1,0 +1,17 @@
+package com.google.android.exoplayer2;
+
+import com.google.android.exoplayer2.MediaItem;
+
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public interface LivePlaybackSpeedControl {
+    float getAdjustedPlaybackSpeed(long j, long j2);
+
+    long getTargetLiveOffsetUs();
+
+    void notifyRebuffer();
+
+    void setLiveConfiguration(MediaItem.LiveConfiguration liveConfiguration);
+
+    void setTargetLiveOffsetOverrideUs(long j);
+}
