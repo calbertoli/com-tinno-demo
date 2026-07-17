@@ -1,5 +1,5 @@
-# Tinno Retail Demo Application (Onn 2026 Configuration
-Tinno Demo Store App Source
+# Tinno Retail Demo Android Application (Onn 2026 Configuration)
+The decompiled source code for the Tinno ODM retail demo configuration for Android, built in Java.
 
 # com.tinno.demo — Full Feature Teardown
 
