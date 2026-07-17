@@ -1,10 +1,10 @@
-# com-tinno-demo
+# Tinno Retail Demo Application (Onn 2026 Configuration
 Tinno Demo Store App Source
 
 # com.tinno.demo — Full Feature Teardown
 
 Static analysis of the Tinno retail "Explore this tablet" demo (richer sibling of Lightcomm's
-`com.hcn.appwidget`). Pulled from a Walmart floor unit. This is what it does *beyond* the visible
+`com.hcn.appwidget`). Pulled from an Onn 8.1 (Walmart) floor unit. This is what it does *beyond* the visible
 Home / Models / Selling-Points / Video screens.
 
 ## Components (manifest)
