@@ -52,10 +52,10 @@ Home / Models / Selling-Points / Video screens.
 - **No runtime brand detection** — own code reads only `ro.build.type` (logging). Branding =
   **per-build baked assets** (`onn.mp4` + model list). Rebrand = asset/string swap, no config server.
 
-## OEM dependency (removed in this fork)
-`InactivityMonitorService` called `IWindowManager.registerIOnTouchListener(android.app.IOnTouchListener)`
+## OEM dependency (should be removed in this fork before compiling)
+`InactivityMonitorService` calls `IWindowManager.registerIOnTouchListener(android.app.IOnTouchListener)`
 — a Tinno framework addition for device-wide touch capture, absent on stock/GSI. It threw
-`NoClassDefFoundError` (an `Error`, so their `catch Exception` missed it) → startup crash. Removed +
+`NoClassDefFoundError` (an `Error`, so their `catch Exception` missed it) → startup crash. Remove +
 orphan `$1` (which extended `android.app.IOnTouchListener$Stub`) deleted. No public substitute exists;
 `android.view.View.OnTouchListener` is per-view/in-process, not equivalent. In-app interaction reset
 can be re-added via `Activity.onUserInteraction()` if desired.
